@@ -1,0 +1,245 @@
+---
+const email = "hakimbouabdellah02@gmail.com";
+const phoneDisplay = "+1 (514) 358-1302";
+const phoneHref = "tel:+15143581302";
+const resumeHref = "/Hakim-Bouabdellah-Resume.pdf";
+
+const languages = ["C# / .NET", "Java", "JavaScript / TypeScript", "Python"];
+const tools = [
+  "Angular",
+  "React",
+  "Next.js",
+  "jQuery",
+  "Firebase",
+  "IIS",
+  "RabbitMQ",
+  "Azure DevOps",
+  "Grok Build",
+];
+---
+
+<main
+  class="relative z-10 grid w-full grid-cols-12 py-[120px] font-sans text-base-content"
+>
+  <header
+    class="card col-span-10 col-start-2 mb-24 sm:mb-[350px] bg-neutral/95 sm:col-span-5"
+  >
+    <div class="card-body p-8">
+      <h1 class="card-title text-4xl sm:text-5xl">Hakim Bouabdellah</h1>
+      <p class="text-xl">🚀 Welcome to my website!</p>
+      <p class="text-base opacity-80">
+        Full-stack developer intern · Computer Science at Concordia · Laval, QC
+      </p>
+      <div class="card-actions mt-2">
+        <div class="join join-vertical sm:join-horizontal">
+          <a class="btn join-item" href={`mailto:${email}`}>Email</a>
+          <a class="btn join-item" href={phoneHref}>Call</a>
+          <a class="btn join-item" href={resumeHref} download>Resume</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <blockquote class="col-span-10 col-start-2 mb-24 sm:mb-[350px] sm:col-span-9">
+    <p
+      class="inline bg-base-content text-4xl leading-none font-bold text-base-100 sm:text-6xl lg:text-7xl"
+    >
+      I like building software and putting it on the internet
+    </p>
+  </blockquote>
+
+  <section
+    class="card col-span-10 col-start-2 mb-24 sm:mb-[350px] bg-neutral/95 sm:col-span-6"
+  >
+    <div class="card-body text-xl leading-relaxed">
+      <h2 class="card-title text-3xl">📜 About</h2>
+      <p>
+        I’m a Computer Science student at Concordia University in Montreal,
+        currently finishing my BCompSc (expected December 2026). I care about
+        shipping real features, writing tests, and making tools that people can
+        actually use.
+      </p>
+      <p>
+        Recent internships took me through a full-stack SaaS product at FlowFit
+        and a Windows imaging pipeline for manufacturing machines at SYNERGX. I
+        like the stretch between product UI and the scripts that keep systems
+        running.
+      </p>
+      <div class="divider">Education</div>
+      <h3 class="text-2xl font-bold">Concordia University</h3>
+      <p class="opacity-80">
+        Bachelor of Computer Science (BCompSc) · Montreal, QC
+      </p>
+      <p>
+        <span class="badge">Sep. 2023 – Dec. 2026</span>
+        <span class="badge badge-ghost">Expected</span>
+      </p>
+    </div>
+  </section>
+
+  <section
+    class="card col-span-10 col-start-2 mb-24 sm:mb-[350px] bg-neutral/95 sm:col-span-6"
+  >
+    <div class="card-body text-xl leading-relaxed">
+      <h2 class="card-title text-3xl">🚀 Projects</h2>
+
+      <article class="space-y-3">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <h3 class="text-2xl font-bold">Spotify Playlist Sorter</h3>
+          <span class="badge">Aug. 2026</span>
+        </div>
+        <ul class="list-disc space-y-2 pl-5">
+          <li>
+            Integrated the Spotify Web API to retrieve playlists and track
+            metadata with authenticated requests.
+          </li>
+          <li>
+            Implemented Spotify OAuth and session management with Better Auth to
+            protect user-specific resources.
+          </li>
+          <li>
+            Designed a responsive, component-based UI with Next.js and HeroUI
+            for playlist management and sorting.
+          </li>
+        </ul>
+      </article>
+
+      <div class="divider"></div>
+
+      <article class="space-y-3">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <h3 class="text-2xl font-bold">Examotron</h3>
+          <span class="badge">Aug. 2024 – Sep. 2024</span>
+        </div>
+        <ul class="list-disc space-y-2 pl-5">
+          <li>
+            Built a student platform for accessing past exams and assignments as
+            a real user-facing web app.
+          </li>
+          <li>
+            Used Next.js and Firebase Storage for file handling and a responsive
+            UI.
+          </li>
+          <li>Designed for high traffic during exam periods.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <blockquote class="col-span-10 col-start-2 mb-24 sm:mb-[350px] sm:col-span-9">
+    <p
+      class="inline bg-base-content text-4xl leading-none font-bold text-base-100 sm:text-6xl lg:text-7xl"
+    >
+      Automate the boring parts. Ship the rest.
+    </p>
+  </blockquote>
+
+  <section
+    class="card col-span-10 col-start-2 mb-24 sm:mb-[350px] bg-neutral/95 sm:col-span-6 sm:col-start-6"
+  >
+    <div class="card-body text-xl leading-relaxed">
+      <h2 class="card-title text-3xl">💼 Work History</h2>
+
+      <article class="space-y-3">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <h3 class="text-2xl font-bold">FlowFit</h3>
+          <span class="badge">Sep. 2025 – May 2026</span>
+        </div>
+        <p class="opacity-80">
+          Full-Stack Software Developer Intern · formerly Consoltec · Montreal,
+          QC
+        </p>
+        <ul class="list-disc space-y-2 pl-5">
+          <li>
+            Built and shipped end-to-end full-stack features, including partial
+            document delivery and enhanced search filters, improving user
+            experience and application responsiveness.
+          </li>
+          <li>
+            Wrote and maintained unit tests, fixed bugs, and partnered with QA
+            and code reviewers to deliver reliable, production-ready releases.
+          </li>
+          <li>
+            Integrated computer-assisted translation tools such as Phrase Cloud,
+            expanding system capabilities and streamlining translation workflows
+            for clients.
+          </li>
+          <li>
+            Collaborated with team leads and peers to deliver key user stories,
+            with consistently positive feedback for code quality and
+            communication.
+          </li>
+        </ul>
+      </article>
+
+      <div class="divider"></div>
+
+      <article class="space-y-3">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <h3 class="text-2xl font-bold">SYNERGX</h3>
+          <span class="badge">Jan. 2025 – May 2025</span>
+        </div>
+        <p class="opacity-80">Software Developer Intern · Laval, QC</p>
+        <ul class="list-disc space-y-2 pl-5">
+          <li>
+            Developed and maintained a Windows 11 image generation pipeline to
+            automate software installation for up to 9 glass inspection machines
+            used in manufacturing.
+          </li>
+          <li>
+            Wrote and optimized Batch and PowerShell scripts to fully automate
+            image creation and deployment with no user prompts.
+          </li>
+          <li>
+            Collaborated with engineering teams to debug, troubleshoot, and
+            resolve technical issues throughout the pipeline.
+          </li>
+          <li>
+            Ensured reliable deployment of necessary software, supporting
+            production quality and equipment readiness.
+          </li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section
+    class="card col-span-10 col-start-2 mb-24 sm:mb-[350px] bg-neutral/95 sm:col-span-6"
+  >
+    <div class="card-body text-xl leading-relaxed">
+      <h2 class="card-title text-3xl">🛠️ Skills &amp; Technologies</h2>
+      <h3 class="text-lg font-bold">Languages</h3>
+      <div class="flex flex-wrap gap-2">
+        {languages.map((skill) => <span class="badge badge-lg">{skill}</span>)}
+      </div>
+      <h3 class="mt-4 text-lg font-bold">Tools &amp; Frameworks</h3>
+      <div class="flex flex-wrap gap-2">
+        {tools.map((skill) => <span class="badge badge-lg">{skill}</span>)}
+      </div>
+    </div>
+  </section>
+
+  <blockquote class="col-span-10 col-start-2 mb-24 sm:mb-[350px] sm:col-span-9">
+    <p
+      class="inline bg-base-content text-4xl leading-none font-bold text-base-100 sm:text-6xl lg:text-7xl"
+    >
+      Thanks for scrolling. Let’s build something.
+    </p>
+  </blockquote>
+
+  <footer
+    class="footer col-span-10 col-start-2 mb-8 bg-neutral/95 p-10 sm:footer-horizontal sm:col-span-10"
+  >
+    <aside>
+      <p class="footer-title">Hakim Bouabdellah</p>
+      <p>Laval, QC</p>
+      <p>Built with Astro, Tailwind, and React Three Fiber.</p>
+    </aside>
+    <nav>
+      <h2 class="footer-title">Contact</h2>
+      <a class="link link-hover" href={`mailto:${email}`}>{email}</a>
+      <a class="link link-hover" href={phoneHref}>{phoneDisplay}</a>
+      <a class="link link-hover" href={resumeHref} download>Download resume</a>
+    </nav>
+  </footer>
+</main>

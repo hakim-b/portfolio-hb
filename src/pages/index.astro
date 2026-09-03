@@ -1,0 +1,13 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Portfolio from "~/components/Portfolio.astro";
+import ThreeScene from "~/components/ThreeScene";
+---
+
+<Layout>
+  <ThreeScene client:only="react">
+    <div class="fixed inset-0 z-0 bg-black"></div>
+  </ThreeScene>
+  <Portfolio />
+</Layout>
+
