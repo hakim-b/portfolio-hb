@@ -1,8 +1,12 @@
 ---
+import profileShot from "~/assets/profile_shot.jpeg";
+
 const email = "hakimbouabdellah02@gmail.com";
 const phoneDisplay = "+1 (514) 358-1302";
 const phoneHref = "tel:+15143581302";
 const resumeHref = "/Hakim-Bouabdellah-Resume.pdf";
+const linkedinHref = "https://www.linkedin.com/in/hakim-bouabdellah-aa6608192/";
+const githubHref = "https://github.com/hakim-b";
 
 const languages = ["C# / .NET", "Java", "JavaScript / TypeScript", "Python"];
 const tools = [
@@ -25,6 +29,11 @@ const tools = [
     class="card col-span-10 col-start-2 mb-24 sm:mb-[350px] bg-neutral/95 sm:col-span-5"
   >
     <div class="card-body p-8">
+      <div class="avatar">
+        <div class="w-24 rounded-full">
+          <img src={profileShot.src} alt="Hakim Bouabdellah" />
+        </div>
+      </div>
       <h1 class="card-title text-4xl sm:text-5xl">Hakim Bouabdellah</h1>
       <p class="text-xl">🚀 Welcome to my website!</p>
       <p class="text-base opacity-80">
@@ -34,6 +43,18 @@ const tools = [
         <div class="join join-vertical sm:join-horizontal">
           <a class="btn join-item" href={`mailto:${email}`}>Email</a>
           <a class="btn join-item" href={phoneHref}>Call</a>
+          <a
+            class="btn join-item"
+            href={linkedinHref}
+            target="_blank"
+            rel="noopener noreferrer">LinkedIn</a
+          >
+          <a
+            class="btn join-item"
+            href={githubHref}
+            target="_blank"
+            rel="noopener noreferrer">GitHub</a
+          >
           <a class="btn join-item" href={resumeHref} download>Resume</a>
         </div>
       </div>
@@ -239,6 +260,18 @@ const tools = [
       <h2 class="footer-title">Contact</h2>
       <a class="link link-hover" href={`mailto:${email}`}>{email}</a>
       <a class="link link-hover" href={phoneHref}>{phoneDisplay}</a>
+      <a
+        class="link link-hover"
+        href={linkedinHref}
+        target="_blank"
+        rel="noopener noreferrer">LinkedIn</a
+      >
+      <a
+        class="link link-hover"
+        href={githubHref}
+        target="_blank"
+        rel="noopener noreferrer">GitHub</a
+      >
       <a class="link link-hover" href={resumeHref} download>Download resume</a>
     </nav>
   </footer>

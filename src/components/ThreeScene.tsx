@@ -1,40 +1,10 @@
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useTexture } from "@react-three/drei";
-import { Suspense, useEffect, useLayoutEffect, useMemo, useRef } from "react";
+import { Suspense, useEffect, useLayoutEffect, useRef } from "react";
 import * as THREE from "three";
+import profileShot from "~/assets/profile_shot.jpeg?url";
 
 const STAR_COUNT = 200;
-
-function createMonogramTexture() {
-  const canvas = document.createElement("canvas");
-  canvas.width = 512;
-  canvas.height = 512;
-  const ctx = canvas.getContext("2d");
-  if (!ctx) {
-    return new THREE.CanvasTexture(canvas);
-  }
-
-  ctx.fillStyle = "#111111";
-  ctx.fillRect(0, 0, 512, 512);
-  ctx.strokeStyle = "#ff6347";
-  ctx.lineWidth = 18;
-  ctx.strokeRect(28, 28, 456, 456);
-
-  ctx.fillStyle = "#f5f5f5";
-  ctx.font = "700 176px ui-sans-serif, system-ui, sans-serif";
-  ctx.textAlign = "center";
-  ctx.textBaseline = "middle";
-  ctx.fillText("HB", 256, 250);
-
-  ctx.fillStyle = "#ff6347";
-  ctx.font = "600 28px ui-sans-serif, system-ui, sans-serif";
-  ctx.fillText("PORTFOLIO", 256, 380);
-
-  const texture = new THREE.CanvasTexture(canvas);
-  texture.colorSpace = THREE.SRGBColorSpace;
-  texture.needsUpdate = true;
-  return texture;
-}
 
 function Stars() {
   const meshRef = useRef<THREE.InstancedMesh>(null);
@@ -69,28 +39,22 @@ function SceneContents() {
   const moonRef = useRef<THREE.Mesh>(null);
   const avatarRef = useRef<THREE.Mesh>(null);
   const { camera, scene } = useThree();
-  const [moonMap, normalMap, spaceMap] = useTexture([
+  const [moonMap, normalMap, spaceMap, avatarMap] = useTexture([
     "/textures/moon.jpg",
     "/textures/normal.jpg",
     "/textures/space.jpg",
+    profileShot,
   ]);
-
-  const avatarTexture = useMemo(() => createMonogramTexture(), []);
 
   useEffect(() => {
     moonMap.colorSpace = THREE.SRGBColorSpace;
     spaceMap.colorSpace = THREE.SRGBColorSpace;
+    avatarMap.colorSpace = THREE.SRGBColorSpace;
     scene.background = spaceMap;
     return () => {
       scene.background = null;
     };
-  }, [moonMap, scene, spaceMap]);
-
-  useEffect(() => {
-    return () => {
-      avatarTexture.dispose();
-    };
-  }, [avatarTexture]);
+  }, [avatarMap, moonMap, scene, spaceMap]);
 
   useEffect(() => {
     const onScroll = () => {
@@ -141,7 +105,7 @@ function SceneContents() {
 
       <mesh ref={avatarRef} position={[2, 0, -5]}>
         <boxGeometry args={[3, 3, 3]} />
-        <meshBasicMaterial map={avatarTexture} />
+        <meshBasicMaterial map={avatarMap} />
       </mesh>
 
       <mesh ref={moonRef} position={[-10, 0, 30]}>
