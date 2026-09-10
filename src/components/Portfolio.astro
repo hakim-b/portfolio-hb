@@ -8,25 +8,26 @@ const resumeHref = "/Hakim-Bouabdellah-Resume.pdf";
 const linkedinHref = "https://www.linkedin.com/in/hakim-bouabdellah-aa6608192/";
 const githubHref = "https://github.com/hakim-b";
 
-const languages = ["C# / .NET", "Java", "JavaScript / TypeScript", "Python"];
+const languages = ["JavaScript / TypeScript", "C# / .NET", "Java", "Python"];
 const tools = [
-  "Angular",
+  "ASP.NET",
   "React",
   "Next.js",
-  "jQuery",
+  "React Native",
+  "Angular",
+  "Supabase",
   "Firebase",
-  "IIS",
   "RabbitMQ",
+  "Expo",
   "Azure DevOps",
-  "Grok Build",
 ];
 ---
 
 <main
-  class="relative z-10 grid w-full grid-cols-12 py-[120px] font-sans text-base-content"
+  class="relative z-10 grid w-full grid-cols-12 py-30 font-sans text-base-content"
 >
   <header
-    class="card col-span-10 col-start-2 mb-24 sm:mb-[350px] bg-neutral/95 sm:col-span-5"
+    class="card col-span-10 col-start-2 mb-24 sm:mb-87.5 bg-neutral/95 sm:col-span-5"
   >
     <div class="card-body p-8">
       <div class="avatar">
@@ -37,7 +38,8 @@ const tools = [
       <h1 class="card-title text-4xl sm:text-5xl">Hakim Bouabdellah</h1>
       <p class="text-xl">🚀 Welcome to my website!</p>
       <p class="text-base opacity-80">
-        Full-stack developer intern · Computer Science at Concordia · Laval, QC
+        Full-Stack Software Developer Intern · Computer Science at Concordia ·
+        Laval, QC
       </p>
       <div class="card-actions mt-2">
         <div class="join join-vertical sm:join-horizontal">
@@ -61,7 +63,7 @@ const tools = [
     </div>
   </header>
 
-  <blockquote class="col-span-10 col-start-2 mb-24 sm:mb-[350px] sm:col-span-9">
+  <blockquote class="col-span-10 col-start-2 mb-24 sm:mb-87.5 sm:col-span-9">
     <p
       class="inline bg-base-content text-4xl leading-none font-bold text-base-100 sm:text-6xl lg:text-7xl"
     >
@@ -70,7 +72,7 @@ const tools = [
   </blockquote>
 
   <section
-    class="card col-span-10 col-start-2 mb-24 sm:mb-[350px] bg-neutral/95 sm:col-span-6"
+    class="card col-span-10 col-start-2 mb-24 sm:mb-87.5 bg-neutral/95 sm:col-span-6"
   >
     <div class="card-body text-xl leading-relaxed">
       <h2 class="card-title text-3xl">📜 About</h2>
@@ -99,28 +101,32 @@ const tools = [
   </section>
 
   <section
-    class="card col-span-10 col-start-2 mb-24 sm:mb-[350px] bg-neutral/95 sm:col-span-6"
+    class="card col-span-10 col-start-2 mb-24 sm:mb-87.5 bg-neutral/95 sm:col-span-6"
   >
     <div class="card-body text-xl leading-relaxed">
       <h2 class="card-title text-3xl">🚀 Projects</h2>
 
       <article class="space-y-3">
         <div class="flex flex-wrap items-baseline justify-between gap-2">
-          <h3 class="text-2xl font-bold">Spotify Playlist Sorter</h3>
-          <span class="badge">Aug. 2026</span>
+          <h3 class="text-2xl font-bold">FarmConnect</h3>
+          <span class="badge">Sep. 2026</span>
         </div>
         <ul class="list-disc space-y-2 pl-5">
           <li>
-            Integrated the Spotify Web API to retrieve playlists and track
-            metadata with authenticated requests.
+            Developed a cross-platform marketplace app using React Native, Expo,
+            and Supabase, connecting customers with local farms to discover and
+            book produce, livestock, and farm activities.
           </li>
           <li>
-            Implemented Spotify OAuth and session management with Better Auth to
-            protect user-specific resources.
+            Engineered a two-sided booking and inventory system with Supabase,
+            including group-split slaughter bookings, shared invitees, inventory
+            management, and seasonal ticketing workflows.
           </li>
           <li>
-            Designed a responsive, component-based UI with Next.js and HeroUI
-            for playlist management and sorting.
+            Won the Open Innovation Challenge at MuslimHacks for building
+            FarmConnect, demonstrating the ability to rapidly design and deliver
+            a full-stack solution to a real-world problem in a hackathon
+            environment.
           </li>
         </ul>
       </article>
@@ -129,25 +135,30 @@ const tools = [
 
       <article class="space-y-3">
         <div class="flex flex-wrap items-baseline justify-between gap-2">
-          <h3 class="text-2xl font-bold">Examotron</h3>
-          <span class="badge">Aug. 2024 – Sep. 2024</span>
+          <h3 class="text-2xl font-bold">Spotify Playlist Sorter</h3>
+          <span class="badge">Aug. 2026</span>
         </div>
         <ul class="list-disc space-y-2 pl-5">
           <li>
-            Built a student platform for accessing past exams and assignments as
-            a real user-facing web app.
+            Integrated the Spotify Web API to securely retrieve user playlists
+            and track metadata, implementing authenticated API requests to
+            interact with users' Spotify data.
           </li>
           <li>
-            Used Next.js and Firebase Storage for file handling and a responsive
-            UI.
+            Implemented Spotify OAuth authentication and session management with
+            Better Auth, protecting user-specific resources and handling
+            authenticated application flows.
           </li>
-          <li>Designed for high traffic during exam periods.</li>
+          <li>
+            Designed a responsive, component-based UI with Next.js and HeroUI,
+            creating interactive playlist management and sorting workflows.
+          </li>
         </ul>
       </article>
     </div>
   </section>
 
-  <blockquote class="col-span-10 col-start-2 mb-24 sm:mb-[350px] sm:col-span-9">
+  <blockquote class="col-span-10 col-start-2 mb-24 sm:mb-87.5 sm:col-span-9">
     <p
       class="inline bg-base-content text-4xl leading-none font-bold text-base-100 sm:text-6xl lg:text-7xl"
     >
@@ -156,7 +167,7 @@ const tools = [
   </blockquote>
 
   <section
-    class="card col-span-10 col-start-2 mb-24 sm:mb-[350px] bg-neutral/95 sm:col-span-6 sm:col-start-6"
+    class="card col-span-10 col-start-2 mb-24 sm:mb-87.5 bg-neutral/95 sm:col-span-6 sm:col-start-6"
   >
     <div class="card-body text-xl leading-relaxed">
       <h2 class="card-title text-3xl">💼 Work History</h2>
@@ -225,7 +236,7 @@ const tools = [
   </section>
 
   <section
-    class="card col-span-10 col-start-2 mb-24 sm:mb-[350px] bg-neutral/95 sm:col-span-6"
+    class="card col-span-10 col-start-2 mb-24 sm:mb-87.5 bg-neutral/95 sm:col-span-6"
   >
     <div class="card-body text-xl leading-relaxed">
       <h2 class="card-title text-3xl">🛠️ Skills &amp; Technologies</h2>
@@ -240,7 +251,7 @@ const tools = [
     </div>
   </section>
 
-  <blockquote class="col-span-10 col-start-2 mb-24 sm:mb-[350px] sm:col-span-9">
+  <blockquote class="col-span-10 col-start-2 mb-24 sm:mb-87.5 sm:col-span-9">
     <p
       class="inline bg-base-content text-4xl leading-none font-bold text-base-100 sm:text-6xl lg:text-7xl"
     >
