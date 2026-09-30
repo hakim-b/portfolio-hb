@@ -17,9 +17,23 @@ const tools = [
   "Angular",
   "Supabase",
   "Firebase",
+  "Docker",
   "RabbitMQ",
+  "MS SQL Server",
   "Expo",
   "Azure DevOps",
+  "Grok Build",
+  "GitHub Copilot",
+];
+const skills = [
+  "Object-Oriented Development",
+  "Problem Solving",
+  "Application Development",
+  "Testing and Debugging",
+  "Windows",
+  "Scripting",
+  "Team Collaboration",
+  "System Integration",
 ];
 ---
 
@@ -117,25 +131,34 @@ const tools = [
 
       <article class="space-y-3">
         <div class="flex flex-wrap items-baseline justify-between gap-2">
-          <h3 class="text-2xl font-bold">FarmConnect</h3>
+          <h3 class="text-2xl font-bold">
+            <a
+              href="https://devpost.com/software/farmconnect-uip3q5"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-hover"
+            >
+              FarmConnect
+            </a>
+          </h3>
           <span class="badge">Sep. 2026</span>
         </div>
         <ul class="list-disc space-y-2 pl-5">
+          <li>
+            Won the Open Innovation Challenge at MuslimHacks for building
+            FarmConnect, demonstrating the ability to rapidly design and deliver
+            a full-stack solution to a real-world problem in a hackathon
+            environment.
+          </li>
           <li>
             Developed a cross-platform marketplace app using React Native, Expo,
             and Supabase, connecting customers with local farms to discover and
             book produce, livestock, and farm activities.
           </li>
           <li>
-            Engineered a two-sided booking and inventory system with Supabase,
-            including group-split slaughter bookings, shared invitees, inventory
-            management, and seasonal ticketing workflows.
-          </li>
-          <li>
-            Won the Open Innovation Challenge at MuslimHacks for building
-            FarmConnect, demonstrating the ability to rapidly design and deliver
-            a full-stack solution to a real-world problem in a hackathon
-            environment.
+            Built a two-sided booking and inventory system in React Native,
+            Expo, and Supabase (shared bookings, invitees, seasonal ticketing
+            system), not just a listing UI.
           </li>
         </ul>
       </article>
@@ -144,7 +167,47 @@ const tools = [
 
       <article class="space-y-3">
         <div class="flex flex-wrap items-baseline justify-between gap-2">
-          <h3 class="text-2xl font-bold">Spotify Playlist Sorter</h3>
+          <h3 class="text-2xl font-bold">
+            <a
+              href="https://ai-incident-triage-app.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-hover"
+            >
+              AI Incident Triage App
+            </a>
+          </h3>
+          <span class="badge">Sep. 2026</span>
+        </div>
+        <ul class="list-disc space-y-2 pl-5">
+          <li>
+            Collaborated with a team of 6 to develop an AI-powered incident
+            triage application within 70 minutes, leveraging the Gemini API and
+            Vercel's AI SDK to streamline incident assessment and
+            prioritization.
+          </li>
+          <li>
+            Implemented backend integration with Supabase for authentication and
+            database management, and contributed to the final project
+            presentation.
+          </li>
+        </ul>
+      </article>
+
+      <div class="divider"></div>
+
+      <article class="space-y-3">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <h3 class="text-2xl font-bold">
+            <a
+              href="https://playlist-sorter-theta.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-hover"
+            >
+              Spotify Playlist Sorter
+            </a>
+          </h3>
           <span class="badge">Aug. 2026</span>
         </div>
         <ul class="list-disc space-y-2 pl-5">
@@ -192,23 +255,25 @@ const tools = [
         </p>
         <ul class="list-disc space-y-2 pl-5">
           <li>
-            Built and shipped end-to-end full-stack features, including partial
-            document delivery and enhanced search filters, improving user
-            experience and application responsiveness.
+            Shipped partial-document delivery and richer search filters across
+            production ASP.NET/Angular applications, improving application
+            responsiveness by letting users retrieve results without waiting for
+            a full document.
           </li>
           <li>
-            Wrote and maintained unit tests, fixed bugs, and partnered with QA
-            and code reviewers to deliver reliable, production-ready releases.
+            Wrote and maintained comprehensive unit tests, fixed bugs, and
+            partnered with QA and code reviewers to deliver reliable production
+            releases, reducing Azure DevOps pipeline test time from 30 minutes
+            to 2 minutes.
           </li>
           <li>
-            Integrated computer-assisted translation tools such as Phrase Cloud,
-            expanding system capabilities and streamlining translation workflows
-            for clients.
+            Integrated computer-assisted translation tools such as Phrase Cloud
+            into the platform, evaluating and embedding software directly into
+            the application instead of a separate client workflow.
           </li>
           <li>
-            Collaborated with team leads and peers to deliver key user stories,
-            with consistently positive feedback for code quality and
-            communication.
+            Delivered user stories with leads and peers; reviews consistently
+            called out code quality and communication.
           </li>
         </ul>
       </article>
@@ -223,21 +288,23 @@ const tools = [
         <p class="opacity-80">Software Developer Intern · Laval, QC</p>
         <ul class="list-disc space-y-2 pl-5">
           <li>
-            Developed and maintained a Windows 11 image generation pipeline to
-            automate software installation for up to 9 glass inspection machines
-            used in manufacturing.
+            Developed and maintained a Windows 11 image generation pipeline that
+            automated software installation for up to 9 glass inspection
+            machines in a manufacturing environment.
           </li>
           <li>
             Wrote and optimized Batch and PowerShell scripts to fully automate
-            image creation and deployment with no user prompts.
+            image creation and deployment, eliminating user prompts and
+            streamlining system setup.
           </li>
           <li>
             Collaborated with engineering teams to debug, troubleshoot, and
-            resolve technical issues throughout the pipeline.
+            resolve technical issues throughout the pipeline development
+            process.
           </li>
           <li>
-            Ensured reliable deployment of necessary software, supporting
-            production quality and equipment readiness.
+            Ensured reliable and consistent deployment of required software,
+            supporting production quality and equipment readiness.
           </li>
         </ul>
       </article>
@@ -256,6 +323,10 @@ const tools = [
       <h3 class="mt-4 text-lg font-bold">Tools &amp; Frameworks</h3>
       <div class="flex flex-wrap gap-2">
         {tools.map((skill) => <span class="badge badge-lg">{skill}</span>)}
+      </div>
+      <h3 class="mt-4 text-lg font-bold">Skills</h3>
+      <div class="flex flex-wrap gap-2">
+        {skills.map((skill) => <span class="badge badge-lg">{skill}</span>)}
       </div>
     </div>
   </section>
