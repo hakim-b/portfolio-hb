@@ -47,10 +47,10 @@ const skills = [
 </button>
 
 <main
-  class="relative z-10 grid w-full grid-cols-12 py-30 font-sans text-base-content"
+  class="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-12 gap-x-6 gap-y-20 px-4 pt-20 pb-28 font-sans text-base-content sm:gap-x-8 sm:gap-y-28 sm:px-8 lg:px-12"
 >
   <header
-    class="card col-span-10 col-start-2 mb-24 sm:mb-87.5 bg-neutral/95 sm:col-span-5"
+    class="card col-span-12 bg-neutral/95 shadow-2xl backdrop-blur-sm md:col-span-8 lg:col-span-6"
   >
     <div class="card-body p-8">
       <div class="avatar">
@@ -86,18 +86,18 @@ const skills = [
     </div>
   </header>
 
-  <blockquote class="col-span-10 col-start-2 mb-24 sm:mb-87.5 sm:col-span-9">
+  <blockquote class="col-span-12 lg:col-span-10">
     <p
-      class="inline bg-base-content text-4xl leading-none font-bold text-base-100 sm:text-6xl lg:text-7xl"
+      class="text-4xl font-extrabold tracking-tight text-white drop-shadow-[0_4px_16px_rgba(0,0,0,0.8)] sm:text-6xl lg:text-7xl leading-tight"
     >
-      I like building software and putting it on the internet
+      Hello there
     </p>
   </blockquote>
 
   <section
-    class="card col-span-10 col-start-2 mb-24 sm:mb-87.5 bg-neutral/95 sm:col-span-6"
+    class="card col-span-12 bg-neutral/95 shadow-2xl backdrop-blur-sm lg:col-span-6"
   >
-    <div class="card-body text-xl leading-relaxed">
+    <div class="card-body gap-4 text-xl leading-relaxed">
       <h2 class="card-title text-3xl">📜 About</h2>
       <p>
         I’m a Computer Science student at Concordia University in Montreal,
@@ -112,19 +112,21 @@ const skills = [
         running.
       </p>
       <div class="divider">Education</div>
-      <h3 class="text-2xl font-bold">Concordia University</h3>
-      <p class="opacity-80">
-        Bachelor of Computer Science (BCompSc) · Montreal, QC
-      </p>
-      <p>
-        <span class="badge">Sep. 2023 – Dec. 2026</span>
-        <span class="badge badge-ghost">Expected</span>
-      </p>
+      <article class="space-y-2">
+        <h3 class="text-2xl font-bold">Concordia University</h3>
+        <p class="opacity-80">
+          Bachelor of Computer Science (BCompSc) · Montreal, QC
+        </p>
+        <div class="flex flex-wrap gap-2 pt-1">
+          <span class="badge">Sep. 2023 – Dec. 2026</span>
+          <span class="badge badge-ghost">Expected</span>
+        </div>
+      </article>
     </div>
   </section>
 
   <section
-    class="card col-span-10 col-start-2 mb-24 sm:mb-87.5 bg-neutral/95 sm:col-span-6"
+    class="card col-span-12 bg-neutral/95 shadow-2xl backdrop-blur-sm lg:col-span-6"
   >
     <div class="card-body text-xl leading-relaxed">
       <h2 class="card-title text-3xl">🚀 Projects</h2>
@@ -230,16 +232,16 @@ const skills = [
     </div>
   </section>
 
-  <blockquote class="col-span-10 col-start-2 mb-24 sm:mb-87.5 sm:col-span-9">
+  <blockquote class="col-span-12 lg:col-span-10">
     <p
-      class="inline bg-base-content text-4xl leading-none font-bold text-base-100 sm:text-6xl lg:text-7xl"
+      class="text-4xl font-extrabold tracking-tight text-white drop-shadow-[0_4px_16px_rgba(0,0,0,0.8)] sm:text-6xl lg:text-7xl leading-tight"
     >
-      Automate the boring parts. Ship the rest.
+      Always curious. Constantly building.
     </p>
   </blockquote>
 
   <section
-    class="card col-span-10 col-start-2 mb-24 sm:mb-87.5 bg-neutral/95 sm:col-span-6 sm:col-start-6"
+    class="card col-span-12 bg-neutral/95 shadow-2xl backdrop-blur-sm lg:col-span-6"
   >
     <div class="card-body text-xl leading-relaxed">
       <h2 class="card-title text-3xl">💼 Work History</h2>
@@ -312,7 +314,7 @@ const skills = [
   </section>
 
   <section
-    class="card col-span-10 col-start-2 mb-24 sm:mb-87.5 bg-neutral/95 sm:col-span-6"
+    class="card col-span-12 bg-neutral/95 shadow-2xl backdrop-blur-sm lg:col-span-6"
   >
     <div class="card-body text-xl leading-relaxed">
       <h2 class="card-title text-3xl">🛠️ Skills &amp; Technologies</h2>
@@ -331,24 +333,26 @@ const skills = [
     </div>
   </section>
 
-  <blockquote class="col-span-10 col-start-2 mb-24 sm:mb-87.5 sm:col-span-9">
+  <blockquote class="col-span-12 lg:col-span-10">
     <p
-      class="inline bg-base-content text-4xl leading-none font-bold text-base-100 sm:text-6xl lg:text-7xl"
+      class="text-4xl font-extrabold tracking-tight text-white drop-shadow-[0_4px_16px_rgba(0,0,0,0.8)] sm:text-6xl lg:text-7xl leading-tight"
     >
-      Thanks for scrolling. Let’s build something.
+      Thank you for scrolling. Let’s connect and build something great together!
     </p>
   </blockquote>
+</main>
 
-  <footer
-    class="footer col-span-10 col-start-2 mb-8 bg-neutral/95 p-10 sm:footer-horizontal sm:col-span-10"
-  >
-    <aside>
-      <p class="footer-title">Hakim Bouabdellah</p>
+<footer
+  class="relative z-10 w-full bg-neutral/95 px-6 py-10 shadow-2xl backdrop-blur-sm border-t border-white/5 sm:px-12 lg:px-20 text-base-content"
+>
+  <div class="footer mx-auto max-w-7xl sm:footer-horizontal justify-between items-start">
+    <aside class="space-y-1">
+      <p class="footer-title text-base font-bold text-white">Hakim Bouabdellah</p>
       <p>Laval, QC</p>
-      <p>Built with Astro, Tailwind, and React Three Fiber.</p>
+      <p class="text-xs opacity-70">Built with Astro, Tailwind, and React Three Fiber.</p>
     </aside>
-    <nav>
-      <h2 class="footer-title">Contact</h2>
+    <nav class="space-y-1">
+      <h2 class="footer-title text-base font-bold text-white">Contact</h2>
       <a class="link link-hover" href={`mailto:${email}`}>{email}</a>
       <a class="link link-hover" href={phoneHref}>{phoneDisplay}</a>
       <a
@@ -365,5 +369,5 @@ const skills = [
       >
       <a class="link link-hover" href={resumeHref} download>Download resume</a>
     </nav>
-  </footer>
-</main>
+  </div>
+</footer>

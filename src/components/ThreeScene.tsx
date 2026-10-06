@@ -74,7 +74,7 @@ function SceneContents() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  useFrame(() => {
+  useFrame((state) => {
     if (torusRef.current) {
       torusRef.current.rotation.x += 0.01;
       torusRef.current.rotation.y += 0.005;
@@ -83,6 +83,18 @@ function SceneContents() {
 
     if (moonRef.current) {
       moonRef.current.rotation.x += 0.005;
+      moonRef.current.rotation.y += 0.003;
+      moonRef.current.position.y = Math.sin(state.clock.elapsedTime * 0.7) * 0.3;
+    }
+
+    if (avatarRef.current) {
+      avatarRef.current.rotation.x += 0.006;
+      avatarRef.current.rotation.y += 0.01;
+      avatarRef.current.rotation.z += 0.004;
+
+      const elapsedTime = state.clock.elapsedTime;
+      avatarRef.current.position.y = Math.sin(elapsedTime * 1.5) * 0.35;
+      avatarRef.current.position.x = 2 + Math.cos(elapsedTime * 1.0) * 0.15;
     }
 
     const t = -window.scrollY;

@@ -2,3 +2,7 @@
 @plugin "daisyui" {
   themes: night --default;
 }
+
+.card-body p {
+  flex-grow: 0;
+}
